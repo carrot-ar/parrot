@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconAdvertiser.swift",
+      "line": 92,
+      "symbol": "BeaconAdvertiser.peripheralManagerDidUpdateState(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconAdvertiser.swift",
+      "line": 96,
+      "symbol": "BeaconAdvertiser.peripheralManagerDidStartAdvertising(_:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconMonitor.swift",
+      "line": 106,
+      "symbol": "BeaconMonitor.locationManager(_:didChangeAuthorization:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconMonitor.swift",
+      "line": 115,
+      "symbol": "BeaconMonitor.locationManager(_:didDetermineState:for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconMonitor.swift",
+      "line": 128,
+      "symbol": "BeaconMonitor.locationManager(_:didEnterRegion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconMonitor.swift",
+      "line": 135,
+      "symbol": "BeaconMonitor.locationManager(_:didExitRegion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconMonitor.swift",
+      "line": 142,
+      "symbol": "BeaconMonitor.locationManager(_:didRangeBeacons:in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconMonitor.swift",
+      "line": 151,
+      "symbol": "BeaconMonitor.locationManager(_:monitoringDidFailFor:withError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconMonitor.swift",
+      "line": 159,
+      "symbol": "BeaconMonitor.locationManager(_:rangingBeaconsDidFailFor:withError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonzalonunez/parrot/Parrot/BeaconMonitor.swift",
+      "line": 167,
+      "symbol": "BeaconMonitor.locationManager(_:didFailWithError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/gonzalonunez/parrot"
+}

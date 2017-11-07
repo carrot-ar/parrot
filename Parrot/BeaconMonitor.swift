@@ -100,6 +100,7 @@ public final class BeaconMonitor: NSObject {
   }
 }
 
+/// :nodoc:
 extension BeaconMonitor: CLLocationManagerDelegate {
   
   public func locationManager(

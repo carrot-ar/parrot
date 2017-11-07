@@ -86,6 +86,7 @@ public final class BeaconAdvertiser: NSObject {
   }
 }
 
+/// :nodoc:
 extension BeaconAdvertiser: CBPeripheralManagerDelegate {
   
   public func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
