@@ -33,7 +33,7 @@ beaconMonitor.startMonitoring(
 )
 ```
 
-### Installation
+### 🛠 Installation
 
 Parrot is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
@@ -47,6 +47,6 @@ Parrot is also available through [Carthage](https://github.com/Carthage/Carthage
 github "gonzalonunez/Parrot"
 ```
 
-### More
+### 🥕 More
 
 To see where we use Parrot ourselves, check out [carrot-ios](https://github.com/carrot-ar/carrot-ios)!
