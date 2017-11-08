@@ -17,7 +17,9 @@ public final class BeaconMonitor: NSObject {
   /**
    Initializer that accepts the [CLBeaconRegion](https://developer.apple.com/documentation/corelocation/clbeaconregion) to be monitored.
    
-   - parameter region: The `CLBeaconRegion` to monitor.
+   - parameter uuid: The underlying `CLBeaconRegion`'s `proximityUUID`.
+   - parameter identifier: The underlying `CLBeaconRegion`'s `identifier`.
+   - parameter params: The `BeaconParams` that will be used to populate the underlying `CLBeaconRegion`'s major/minor values.
   */
   public init(
     uuid: UUID,

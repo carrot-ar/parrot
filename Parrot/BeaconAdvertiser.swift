@@ -19,8 +19,8 @@ public final class BeaconAdvertiser: NSObject {
    Initializer that creates the underlying [CLBeaconRegion](https://developer.apple.com/documentation/corelocation/clbeaconregion) that is advertised.
    
    - parameter uuid: The underlying `CLBeaconRegion`'s `proximityUUID`.
-   - parameter params: The `BeaconParams` that will be used to populate the underlying `CLBeaconRegion`'s major/minor values.
    - parameter identifier: The underlying `CLBeaconRegion`'s `identifier`.
+   - parameter params: The `BeaconParams` that will be used to populate the underlying `CLBeaconRegion`'s major/minor values.
   */
   public init(
     uuid: UUID,

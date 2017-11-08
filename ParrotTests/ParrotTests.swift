@@ -21,6 +21,12 @@ class ParrotTests: XCTestCase {
     assert(beacon.identifier == identifier)
     assert(beacon.major == nil)
     assert(beacon.minor == nil)
+    switch beacon.params {
+    case .none:
+      assert(true)
+    case .major, .both:
+      assert(false, "Unexpected BeaconParams")
+    }
   }
   
   func testOnlyMajorParams() {
@@ -28,6 +34,12 @@ class ParrotTests: XCTestCase {
     assert(beacon.identifier == identifier)
     assert(beacon.major == 100)
     assert(beacon.minor == nil)
+    switch beacon.params {
+    case .major:
+      assert(true)
+    case .none, .both:
+      assert(false, "Unexpected BeaconParams")
+    }
   }
   
   func testBothMajorAndMinorParams() {
@@ -35,5 +47,11 @@ class ParrotTests: XCTestCase {
     assert(beacon.identifier == identifier)
     assert(beacon.major == 100)
     assert(beacon.minor == 50)
+    switch beacon.params {
+    case .both:
+      assert(true)
+    case .none, .major:
+      assert(false, "Unexpected BeaconParams")
+    }
   }
 }

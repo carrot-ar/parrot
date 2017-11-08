@@ -13,6 +13,7 @@
 		AB751A071FB259CE00285CF0 /* BeaconAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751A051FB259CD00285CF0 /* BeaconAdvertiser.swift */; };
 		AB751A081FB259CE00285CF0 /* BeaconMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751A061FB259CE00285CF0 /* BeaconMonitor.swift */; };
 		AB751A0A1FB2654700285CF0 /* BeaconParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751A091FB2654700285CF0 /* BeaconParams.swift */; };
+		AB962CCB1FB3C93300F82AB5 /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB962CCA1FB3C93300F82AB5 /* BeaconInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		AB751A051FB259CD00285CF0 /* BeaconAdvertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconAdvertiser.swift; sourceTree = "<group>"; };
 		AB751A061FB259CE00285CF0 /* BeaconMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconMonitor.swift; sourceTree = "<group>"; };
 		AB751A091FB2654700285CF0 /* BeaconParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconParams.swift; sourceTree = "<group>"; };
+		AB962CCA1FB3C93300F82AB5 /* BeaconInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				AB751A051FB259CD00285CF0 /* BeaconAdvertiser.swift */,
 				AB751A061FB259CE00285CF0 /* BeaconMonitor.swift */,
+				AB962CCA1FB3C93300F82AB5 /* BeaconInfo.swift */,
 				AB751A091FB2654700285CF0 /* BeaconParams.swift */,
 				AB7519EE1FB24DFC00285CF0 /* Parrot.h */,
 				AB7519EF1FB24DFC00285CF0 /* Info.plist */,
@@ -209,6 +212,7 @@
 				AB751A081FB259CE00285CF0 /* BeaconMonitor.swift in Sources */,
 				AB751A0A1FB2654700285CF0 /* BeaconParams.swift in Sources */,
 				AB751A071FB259CE00285CF0 /* BeaconAdvertiser.swift in Sources */,
+				AB962CCB1FB3C93300F82AB5 /* BeaconInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
