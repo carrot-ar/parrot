@@ -25,7 +25,7 @@ public final class BeaconAdvertiser: NSObject {
   public init(
     uuid: UUID,
     identifier: String,
-    params: BeaconRegionParams) throws
+    params: BeaconRegionParams)
   {
     beaconRegion = CLBeaconRegion(
       uuid: uuid,
