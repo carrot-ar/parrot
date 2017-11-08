@@ -4,7 +4,7 @@
 
 Parrot is a (very) small Swift framework that helps with advertising an iOS device as an iBeacon as well as monitoring/ranging for iBeacons.
 
-## 🎙 Broadcasting an iBeacon Signal
+### 🎙 Broadcasting an iBeacon Signal
 
 Parrot allows you to [turn your device into an iBeacon](https://developer.apple.com/documentation/corelocation/turning_an_ios_device_into_an_ibeacon) by doing the following:
 
@@ -16,7 +16,7 @@ beaconAdvertiser.startAdvertising { advertiser, state in
 }
 ```
 
-## 🔊 Determining the Proximity to an iBeacon
+### 🔊 Determining the Proximity to an iBeacon
 
 Parrot also allows you to very easily [determine the proximity to an iBeacon](https://developer.apple.com/documentation/corelocation/determining_the_proximity_to_an_ibeacon) by doing the following:
 
@@ -33,9 +33,7 @@ monitor.startMonitoring(
 )
 ```
 
-## Installation
-
-## Installation
+### Installation
 
 Parrot is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
@@ -49,6 +47,6 @@ Parrot is also available through [Carthage](https://github.com/Carthage/Carthage
 github "gonzalonunez/Parrot"
 ```
 
-## Extras
+### Extras
 
 To see where we use Parrot ourselves, check out [carrot-ios](https://github.com/carrot-ar/carrot-ios)!
