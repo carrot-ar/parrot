@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BeaconMonitor Class Reference</title>
+    <title>BeaconInfo Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/BeaconMonitor" class="dashAnchor"></a>
-    <a title="BeaconMonitor Class Reference"></a>
+    <a name="//apple_ref/swift/Struct/BeaconInfo" class="dashAnchor"></a>
+    <a title="BeaconInfo Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Parrot Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Parrot Reference</a>
         <img id="carat" src="../img/carat.png" />
-        BeaconMonitor Class Reference
+        BeaconInfo Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -73,32 +73,25 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BeaconMonitor</h1>
+            <h1>BeaconInfo</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BeaconMonitor</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BeaconInfo</span></code></pre>
 
                 </div>
               </div>
-            <p>A class that allows a <code>CLBeaconRegion</code> to be monitored.</p>
+            <p>A struct to help package and serialize information regarding a <code>CLBeaconRegion</code></p>
 
           </section>
           <section class="section task-group-section">
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Lifecycle"></a>
-                <a name="//apple_ref/swift/Section/Lifecycle" class="dashAnchor"></a>
-                <a href="#/Lifecycle">
-                  <h3 class="section-name">Lifecycle</h3>
-                </a>
-              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Parrot13BeaconMonitorCAC10Foundation4UUIDV4uuid_SS10identifierAA0B12RegionParamsO6paramstcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(uuid:identifier:params:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Parrot13BeaconMonitorCAC10Foundation4UUIDV4uuid_SS10identifierAA0B12RegionParamsO6paramstcfc">init(uuid:identifier:params:)</a>
+                    <a name="/s:6Parrot10BeaconInfoV4uuid10Foundation4UUIDVv"></a>
+                    <a name="//apple_ref/swift/Property/uuid" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Parrot10BeaconInfoV4uuid10Foundation4UUIDVv">uuid</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -106,8 +99,88 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initializer that accepts the <a href="https://developer.apple.com/documentation/corelocation/clbeaconregion">CLBeaconRegion</a> to be monitored.</p>
+                        <p>The underlying <code>CLBeaconRegion</code>&rsquo;s <code>proximityUUID</code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">uuid</span><span class="p">:</span> <span class="kt">UUID</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Parrot10BeaconInfoV10identifierSSv"></a>
+                    <a name="//apple_ref/swift/Property/identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Parrot10BeaconInfoV10identifierSSv">identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The underlying <code>CLBeaconRegion</code>&rsquo;s <code>identifier</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Parrot10BeaconInfoV6paramsAA0B12RegionParamsOv"></a>
+                    <a name="//apple_ref/swift/Property/params" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Parrot10BeaconInfoV6paramsAA0B12RegionParamsOv">params</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>BeaconParams</code> that will be used to populate the underlying <code>CLBeaconRegion</code>&rsquo;s major/minor values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Enums/BeaconRegionParams.html">BeaconRegionParams</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Parrot10BeaconInfoVAC10Foundation4UUIDV4uuid_SS10identifierAA0B12RegionParamsO6paramstcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(uuid:identifier:params:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Parrot10BeaconInfoVAC10Foundation4UUIDV4uuid_SS10identifierAA0B12RegionParamsO6paramstcfc">init(uuid:identifier:params:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -139,18 +212,6 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>identifier</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The underlying <code>CLBeaconRegion</code>&rsquo;s <code>identifier</code>.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
                                 <em>params</em>
                                 </code>
                               </td>
@@ -160,29 +221,30 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The underlying <code>CLBeaconRegion</code>&rsquo;s <code><a href="../Structs/BeaconInfo.html#/s:6Parrot10BeaconInfoV10identifierSSv">identifier</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Public"></a>
-                <a name="//apple_ref/swift/Section/Public" class="dashAnchor"></a>
-                <a href="#/Public">
-                  <h3 class="section-name">Public</h3>
-                </a>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Parrot13BeaconMonitorC15startMonitoringyyAC_SC11CLProximityOtc17onProximityUpdate_ys5Error_pc0gJ0tF"></a>
-                    <a name="//apple_ref/swift/Method/startMonitoring(onProximityUpdate:onError:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Parrot13BeaconMonitorC15startMonitoringyyAC_SC11CLProximityOtc17onProximityUpdate_ys5Error_pc0gJ0tF">startMonitoring(onProximityUpdate:onError:)</a>
+                    <a name="/s:6Parrot10BeaconInfoVACSo14CLBeaconRegionC6region_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(region:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Parrot10BeaconInfoVACSo14CLBeaconRegionC6region_tcfc">init(region:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -190,16 +252,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Start monitoring the underlying <code>CLBeaconRegion</code>.</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startMonitoring</span><span class="p">(</span>
-  <span class="nv">onProximityUpdate</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">BeaconMonitor</span><span class="p">,</span> <span class="kt">CLProximity</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
-  <span class="nv">onError</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">region</span><span class="p">:</span> <span class="kt">CLBeaconRegion</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -210,56 +269,17 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>onProximityUpdate</em>
+                                <em>region</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>A closure that gets passed an instance of <code>self</code> along with the current <code>CLProximity</code> acquired whenever the <code>CLBeaconRegion</code> is ranged.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>onError</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A closure that is called whenever an error occurs.</p>
+                                  <p>The underlying <code>CLBeaconRegion</code>.</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Parrot13BeaconMonitorC14stopMonitoringyyF"></a>
-                    <a name="//apple_ref/swift/Method/stopMonitoring()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Parrot13BeaconMonitorC14stopMonitoringyyF">stopMonitoring()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Stop monitoring the underlying <code>CLBeaconRegion</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopMonitoring</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>

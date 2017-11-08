@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BeaconAdvertiserError Enumeration Reference</title>
+    <title>CLBeaconRegion Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/BeaconAdvertiserError" class="dashAnchor"></a>
-    <a title="BeaconAdvertiserError Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Extension/CLBeaconRegion" class="dashAnchor"></a>
+    <a title="CLBeaconRegion Extension Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Parrot Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Parrot Reference</a>
         <img id="carat" src="../img/carat.png" />
-        BeaconAdvertiserError Enumeration Reference
+        CLBeaconRegion Extension Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -73,14 +73,8 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BeaconAdvertiserError</h1>
-              <div class="declaration">
-                <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">BeaconAdvertiserError</span><span class="p">:</span> <span class="kt">Error</span></code></pre>
-
-                </div>
-              </div>
-            <p>An enum describing an error originating from a <code><a href="../Classes/BeaconAdvertiser.html">BeaconAdvertiser</a></code>.</p>
+            <h1>CLBeaconRegion</h1>
+            <p>An extension that allows <code>CLBeaconRegion</code>s to be used with <code><a href="../Enums/BeaconRegionParams.html">BeaconRegionParams</a></code></p>
 
           </section>
           <section class="section task-group-section">
@@ -89,9 +83,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Parrot21BeaconAdvertiserErrorO11unsupportedA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/unsupported" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Parrot21BeaconAdvertiserErrorO11unsupportedA2CmF">unsupported</a>
+                    <a name="/s:So14CLBeaconRegionC6ParrotE6paramsAC06BeaconB6ParamsOv"></a>
+                    <a name="//apple_ref/swift/Property/params" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So14CLBeaconRegionC6ParrotE6paramsAC06BeaconB6ParamsOv">params</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -99,45 +93,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>CBManagerState</code> is <code>.unsupported</code>.</p>
+                        <p>Returns the corresponding <code><a href="../Enums/BeaconRegionParams.html">BeaconRegionParams</a></code> of the receiver.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n">unsupported</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Parrot21BeaconAdvertiserErrorO12unauthorizedA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/unauthorized" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Parrot21BeaconAdvertiserErrorO12unauthorizedA2CmF">unauthorized</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The <code>CBManagerState</code> is <code>.unauthorized</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n">unauthorized</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Enums/BeaconRegionParams.html">BeaconRegionParams</a></span></code></pre>
 
                         </div>
                       </div>
