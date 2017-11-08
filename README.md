@@ -22,7 +22,7 @@ Parrot also allows you to very easily [determine the proximity to an iBeacon](ht
 
 ```swift
 let uuid = UUID(string: "E621E1F8-C36C-495A-93FC-0C247A3E6E5F")!
-let beaconMonitor = BeaconMonitor(uuid: uuid, identifier: "dfa", params: .none)
+let beaconMonitor = BeaconMonitor(uuid: uuid, identifier: "com.myCompany.BeaconIdentifier", params: .none)
 beaconMonitor.startMonitoring(
   onProximityUpdate: { monitor, proximity in
     print("Proximity: \(proximity) for \(monitor)")
