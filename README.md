@@ -22,8 +22,8 @@ Parrot also allows you to very easily [determine the proximity to an iBeacon](ht
 
 ```swift
 let uuid = UUID(string: "E621E1F8-C36C-495A-93FC-0C247A3E6E5F")!
-let monitor = BeaconMonitor(uuid: uuid, identifier: "dfa", params: .none)
-monitor.startMonitoring(
+let beaconMonitor = BeaconMonitor(uuid: uuid, identifier: "dfa", params: .none)
+beaconMonitor.startMonitoring(
   onProximityUpdate: { monitor, proximity in
     print("Proximity: \(proximity) for \(monitor)")
   },
@@ -47,6 +47,6 @@ Parrot is also available through [Carthage](https://github.com/Carthage/Carthage
 github "gonzalonunez/Parrot"
 ```
 
-### Extras
+### More
 
 To see where we use Parrot ourselves, check out [carrot-ios](https://github.com/carrot-ar/carrot-ios)!
