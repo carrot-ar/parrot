@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name               = "Parrot"
-  s.version            = "0.0.4"
+  s.version            = "0.0.5"
   s.summary            = "Parrot is a (very) small Swift framework that helps with advertising an iOS device as an iBeacon as well as monitoring/ranging for iBeacons."
   s.description        = <<-DESC
                           Parrot is (very) small Swift framework that helps with iBeacon related functionality on iOS. BeaconAdvertiser advertises an iOS device as an iBeacon, and BeaconRanger monitors/ranges for iBeacons.

@@ -68,13 +68,18 @@ extension BeaconInfo: Codable {
     }
     uuid = proximityUUID
     identifier = try values.decode(String.self, forKey: .identifier)
-    params = try values.decode(BeaconRegionParams.self, forKey: .params)
+    params = (try? values.decode(BeaconRegionParams.self, forKey: .params)) ?? .none
   }
 
   public func encode(to encoder: Encoder) throws {
     var container = encoder.container(keyedBy: CodingKeys.self)
     try container.encode(uuid.uuidString, forKey: .uuid)
     try container.encode(identifier, forKey: .identifier)
-    try container.encode(params, forKey: .params)
+    switch params {
+    case .major, .both:
+      try container.encode(params, forKey: .params)
+    case .none:
+      break
+    }
   }
 }
