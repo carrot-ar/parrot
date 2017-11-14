@@ -104,6 +104,24 @@ class ParrotTests: XCTestCase {
     }
   }
   
+  func testNoNestedParamsDictionaryJSON() {
+    let dict = [
+      "identifier": "com.ParrotTests.Beacon",
+      "uuid": "E621E1F8-C36C-495A-93FC-0C247A3E6E5F"
+    ]
+    let data = try! JSONSerialization.data(withJSONObject: dict, options: [])
+    print(try! JSONSerialization.jsonObject(with: data, options: []))
+    let decoded = try? JSONDecoder().decode(BeaconInfo.self, from: data)
+    XCTAssertNotNil(decoded)
+    dump(decoded)
+    switch decoded!.params {
+    case .none:
+      break
+    default:
+      XCTAssert(false, "Unexpected BeaconParams \(String(describing: decoded?.params))")
+    }
+  }
+  
   func testBeaconInfoJSON() {
     let params = BeaconRegionParams.both(major: 100, minor: 50)
     let beaconInfo = BeaconInfo(uuid: uuid, identifier: identifier, params: params)
