@@ -1,6 +1,5 @@
 language: swift
 osx_image: xcode9
 xcode_sdk: iphonesimulator11.0
-xcode_project: Parrot.xcodeproj
-xcode_scheme: Parrot
-script: xctool -project Parrot.xcodeproj -scheme ParrotTests build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+script:
+    - xcodebuild clean test -project Parrot.xcodeproj -scheme Parrot -destination "platform=iOS Simulator,name=iPhone 8,OS=10.3" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
