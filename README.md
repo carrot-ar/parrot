@@ -49,7 +49,7 @@ pod "Parrot"
 Parrot is also available through [Carthage](https://github.com/Carthage/Carthage). Add this to your Cartfile:
 
 ```
-github "gonzalonunez/Parrot"
+github "carrot-ar/Parrot"
 ```
 
 ### 🥕 More
