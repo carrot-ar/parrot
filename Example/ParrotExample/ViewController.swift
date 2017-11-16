@@ -55,6 +55,8 @@ class ViewController: UIViewController {
   private enum State {
     case wantsMonitoring
     case wantsAdvertising
+    case monitoring
+    case advertising
   }
   
   private var state: State = .wantsAdvertising {
@@ -91,6 +93,8 @@ class ViewController: UIViewController {
         uuid: uuid,
         identifier: "com.ParrotExample.Beacon",
         params: .none)
+      startButton.setTitle("Stop", for: .normal)
+      state = .monitoring
       monitor?.startMonitoring(
         onProximityUpdate: { [weak self] monitor, proximity in
           switch proximity {
@@ -114,9 +118,19 @@ class ViewController: UIViewController {
         uuid: uuid,
         identifier: "com.ParrotExample.Beacon", 
         params: .none)
+      startButton.setTitle("Stop", for: .normal)
+      state = .advertising
       advertiser?.startAdvertising { [weak self] advertiser, state in
         self?.infoLabel.text = "\(state)...".capitalized
       }
+    case .monitoring:
+      startButton.setTitle("Start", for: .normal)
+      monitor?.stopMonitoring()
+      state = .wantsMonitoring
+    case .advertising:
+      startButton.setTitle("Start", for: .normal)
+      advertiser?.stopAdvertising()
+      state = .wantsAdvertising
     }
   }
   
@@ -124,11 +138,13 @@ class ViewController: UIViewController {
     switch (state, previous) {
     case (.wantsMonitoring, .wantsAdvertising):
       advertiser = nil
+      startButton.setTitle("Start", for: .normal)
       self.infoLabel.text = "Idle..."
     case (.wantsAdvertising, .wantsMonitoring):
       monitor = nil
+      startButton.setTitle("Start", for: .normal)
       self.infoLabel.text = "Idle..."
-    case (.wantsMonitoring, .wantsMonitoring), (.wantsAdvertising, .wantsAdvertising):
+    default:
       break
     }
   }
