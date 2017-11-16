@@ -1,0 +1,6 @@
+framework module Pods_ParrotExample {
+  umbrella header "Pods-ParrotExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
