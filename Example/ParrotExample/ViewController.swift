@@ -105,6 +105,7 @@ class ViewController: UIViewController {
           }
         },
         onError: { [weak self] error in
+          print("ERROR: \(error)")
           self?.infoLabel.text = error.localizedDescription
         }
       )
