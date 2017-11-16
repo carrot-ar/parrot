@@ -62,7 +62,6 @@ class ParrotTests: XCTestCase {
     let beaconRegionParams = BeaconRegionParams.none
     let data = try? JSONEncoder().encode(beaconRegionParams)
     XCTAssertNotNil(data)
-    print(try! JSONSerialization.jsonObject(with: data!, options: []))
     let decoded = try? JSONDecoder().decode(BeaconRegionParams.self, from: data!)
     XCTAssertNotNil(decoded)
     switch (beaconRegionParams, decoded!) {
@@ -77,7 +76,6 @@ class ParrotTests: XCTestCase {
     let beaconRegionParams = BeaconRegionParams.major(100)
     let data = try? JSONEncoder().encode(beaconRegionParams)
     XCTAssertNotNil(data)
-    print(try! JSONSerialization.jsonObject(with: data!, options: []))
     let decoded = try? JSONDecoder().decode(BeaconRegionParams.self, from: data!)
     XCTAssertNotNil(decoded)
     switch (beaconRegionParams, decoded!) {
@@ -92,7 +90,6 @@ class ParrotTests: XCTestCase {
     let beaconRegionParams = BeaconRegionParams.both(major: 100, minor: 50)
     let data = try? JSONEncoder().encode(beaconRegionParams)
     XCTAssertNotNil(data)
-    print(try! JSONSerialization.jsonObject(with: data!, options: []))
     let decoded = try? JSONDecoder().decode(BeaconRegionParams.self, from: data!)
     XCTAssertNotNil(decoded)
     switch (beaconRegionParams, decoded!) {
@@ -110,10 +107,8 @@ class ParrotTests: XCTestCase {
       "uuid": "E621E1F8-C36C-495A-93FC-0C247A3E6E5F"
     ]
     let data = try! JSONSerialization.data(withJSONObject: dict, options: [])
-    print(try! JSONSerialization.jsonObject(with: data, options: []))
     let decoded = try? JSONDecoder().decode(BeaconInfo.self, from: data)
     XCTAssertNotNil(decoded)
-    dump(decoded)
     switch decoded!.params {
     case .none:
       break
@@ -127,7 +122,6 @@ class ParrotTests: XCTestCase {
     let beaconInfo = BeaconInfo(uuid: uuid, identifier: identifier, params: params)
     let data = try? JSONEncoder().encode(beaconInfo)
     XCTAssertNotNil(data)
-    print(try! JSONSerialization.jsonObject(with: data!, options: []))
     let decoded = try? JSONDecoder().decode(BeaconInfo.self, from: data!)
     XCTAssertNotNil(decoded)
     XCTAssert(beaconInfo.uuid == uuid)
