@@ -1,0 +1,6 @@
+framework module Parrot {
+  umbrella header "Parrot-umbrella.h"
+
+  export *
+  module * { export * }
+}
