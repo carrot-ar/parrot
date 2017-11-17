@@ -40,7 +40,7 @@ beaconMonitor.startMonitoring(
 
 ### 📚 Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first. If you'd like to advertise and monitor, you'll two devices.
+To run the example project, clone the repo and run `pod install` from the Example directory first. If you'd like to advertise and monitor, you'll need two devices.
 
 ### 🛠 Installation
 
