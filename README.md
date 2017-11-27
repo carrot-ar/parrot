@@ -55,7 +55,3 @@ Parrot is also available through [Carthage](https://github.com/Carthage/Carthage
 ```
 github "carrot-ar/Parrot"
 ```
-
-### 🥕 More
-
-To see where we use Parrot ourselves, check out [carrot-ios](https://github.com/carrot-ar/carrot-ios)!
