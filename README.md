@@ -7,7 +7,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Build Status](https://travis-ci.org/carrot-ar/parrot.svg?branch=master)](https://travis-ci.org/carrot-ar/parrot)
 
-Parrot is a (very) small Swift framework for advertising an iOS device as an iBeacon and monitoring/ranging other iBeacons.
+Parrot is a Swift framework for advertising an iOS device as an iBeacon and monitoring/ranging other iBeacons.
 
 ### 🎙 Broadcasting an iBeacon Signal
 
