@@ -1,11 +1,21 @@
 <p align="center">
-<img src="https://github.com/carrot-ar/carrot-ios/wiki/resources/Parrot@2x.png" alt="Carrot" width="300">
+  <img src="https://github.com/carrot-ar/carrot-ios/wiki/resources/Parrot@2x.png" alt="Carrot" width="300">
 </p>
-
-[![Platforms](https://img.shields.io/cocoapods/p/Parrot.svg?style=flat)](https://github.com/carrot-ar/parrot/)
-[![Pods version](https://img.shields.io/cocoapods/v/Parrot.svg?style=flat)](https://cocoapods.org/pods/Parrot)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Build Status](https://travis-ci.org/carrot-ar/parrot.svg?branch=master)](https://travis-ci.org/carrot-ar/parrot)
+<p align="center">
+    <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
+    <a href="https://github.com/carrot-ar/parrot/">
+        <img src="https://img.shields.io/cocoapods/p/Parrot.svg?style=flat"  />
+    </a>
+    <a href="https://travis-ci.org/carrot-ar/parrot">
+        <img src="https://travis-ci.org/carrot-ar/parrot.svg?branch=master" />
+    </a>
+    <a href="https://cocoapods.org/pods/Parrot">
+        <img src="https://img.shields.io/cocoapods/v/Parrot.svg?style=flat" />
+    </a>
+    <a href="https://github.com/Carthage/Carthage">
+        <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" />
+    </a>
+</p>
 
 Parrot is a Swift framework for advertising an iOS device as an iBeacon and monitoring/ranging other iBeacons.
 
